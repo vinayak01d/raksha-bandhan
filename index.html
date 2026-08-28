@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Favourite Pain in the Ass ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#080304;
+    color:white;
+    font-family:Georgia,"Times New Roman",serif;
+    overflow:hidden;
+}
+
+.page{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(170,35,25,.38),
+    transparent 42%),
+    linear-gradient(135deg,#170304,#57080e,#180203);
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.particles{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+}
+
+.particle{
+    position:absolute;
+    font-size:12px;
+    opacity:.4;
+    animation:float 6s infinite ease-in-out;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0) rotate(0deg);
+        opacity:.2;
+    }
+
+    50%{
+        transform:translateY(-90px) rotate(20deg);
+        opacity:.8;
+    }
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    width:min(92vw,900px);
+    height:min(88vh,680px);
+
+    position:relative;
+
+    border:1px solid rgba(237,194,140,.5);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:40px;
+
+    box-shadow:
+    0 0 60px rgba(255,70,30,.13),
+    inset 0 0 80px rgba(0,0,0,.35);
+
+    backdrop-filter:blur(5px);
+}
+
+.corner{
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-color:#c99b72;
+}
+
+.tl{
+    top:15px;
+    left:15px;
+    border-top:1px solid;
+    border-left:1px solid;
+}
+
+.tr{
+    top:15px;
+    right:15px;
+    border-top:1px solid;
+    border-right:1px solid;
+}
+
+.bl{
+    bottom:15px;
+    left:15px;
+    border-bottom:1px solid;
+    border-left:1px solid;
+}
+
+.br{
+    bottom:15px;
+    right:15px;
+    border-bottom:1px solid;
+    border-right:1px solid;
+}
+
+/* =========================
+   SCREENS
+========================= */
+
+.screen{
+    display:none;
+    width:100%;
+    height:100%;
+
+    align-items:center;
+    justify-content:center;
+
+    flex-direction:column;
+    text-align:center;
+
+    animation:screenIn .7s ease;
+
+    overflow-y:auto;
+}
+
+.screen.active{
+    display:flex;
+}
+
+@keyframes screenIn{
+
+    from{
+        opacity:0;
+        transform:translateY(25px) scale(.98);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+/* =========================
+   TEXT
+========================= */
+
+h1{
+    font-size:clamp(30px,6vw,60px);
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#f5e4c6;
+
+    text-shadow:0 0 20px rgba(255,190,120,.25);
+
+    margin-bottom:12px;
+}
+
+.subtitle{
+    color:#c9a27e;
+    font-style:italic;
+    font-size:17px;
+    margin-bottom:25px;
+}
+
+.highlight{
+    color:#f2cfa7;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+    margin-top:28px;
+
+    background:transparent;
+
+    color:#ead4b2;
+
+    border:1px solid #a87552;
+
+    padding:13px 38px;
+
+    font-family:inherit;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+    background:rgba(170,60,30,.3);
+    box-shadow:0 0 25px rgba(255,100,50,.25);
+    transform:translateY(-3px) scale(1.02);
+}
+
+/* =====================================================
+   INTRO RAKHI CIRCLE
+===================================================== */
+
+.intro-rakhi-circle{
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    margin:15px;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+    radial-gradient(
+        circle at 50% 45%,
+        rgba(255,210,100,.15),
+        rgba(100,5,15,.35) 60%,
+        rgba(30,0,5,.7)
+    );
+
+    border:2px solid #e8c47b;
+
+    box-shadow:
+        0 0 12px rgba(255,205,100,.5),
+        0 0 35px rgba(255,80,40,.3),
+        inset 0 0 30px rgba(255,180,70,.12);
+
+    animation:
+        rakhiCircleFloat 3s ease-in-out infinite;
+}
+
+@keyframes rakhiCircleFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-7px);
+    }
+}
+
+
+/* Rakhi thread */
+
+.intro-rakhi-thread{
+
+    position:absolute;
+
+    width:145px;
+    height:9px;
+
+    border-radius:20px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #e8b33f 0px,
+            #e8b33f 5px,
+            #a91d27 5px,
+            #a91d27 10px,
+            #f0cf61 10px,
+            #f0cf61 15px
+        );
+
+    box-shadow:
+        0 0 8px rgba(240,190,70,.5);
+
+    transform:rotate(-15deg);
+
+    opacity:.95;
+}
+
+
+/* Small golden beads */
+
+.intro-bead{
+    position:absolute;
+
+    width:13px;
+    height:13px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #fff4ae,
+            #e4ad27 45%,
+            #8d5710 100%
+        );
+
+    box-shadow:
+        0 0 7px rgba(255,205,70,.5);
+}
+
+.bead1{
+    left:18px;
+    top:78px;
+}
+
+.bead2{
+    left:38px;
+    top:48px;
+}
+
+.bead3{
+    right:18px;
+    top:78px;
+}
+
+.bead4{
+    right:38px;
+    top:48px;
+}
+
+.bead5{
+    left:42px;
+    bottom:45px;
+}
+
+.bead6{
+    right:42px;
+    bottom:45px;
+}
+
+
+/* Main Rakhi */
+
+.intro-rakhi{
+
+    width:82px;
+    height:82px;
+
+    position:relative;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff0a1 0%,
+            #e7b52e 32%,
+            #a64c14 58%,
+            #6b101c 100%
+        );
+
+    border:4px solid #f1d274;
+
+    box-shadow:
+        0 0 12px rgba(255,220,100,.8),
+        0 0 25px rgba(255,90,30,.35);
+
+    z-index:3;
+
+    animation:rakhiPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes rakhiPulse{
+
+    0%,100%{
+        box-shadow:
+        0 0 12px rgba(255,220,100,.8),
+        0 0 25px rgba(255,90,30,.35);
+    }
+
+    50%{
+        box-shadow:
+        0 0 20px rgba(255,230,120,1),
+        0 0 38px rgba(255,90,30,.45);
+    }
+}
+
+
+/* Floral petals */
+
+.intro-petal{
+
+    position:absolute;
+
+    width:25px;
+    height:25px;
+
+    background:
+        radial-gradient(
+            circle at 30% 30%,
+            #fff0c2,
+            #e42b38 55%,
+            #7d0715
+        );
+
+    border:1px solid #f5c95b;
+
+    border-radius:
+        60% 40% 60% 40%;
+
+    box-shadow:
+        0 0 6px rgba(255,210,80,.5);
+}
+
+.petal1{
+    top:4px;
+    left:25px;
+}
+
+.petal2{
+    top:25px;
+    right:4px;
+    transform:rotate(90deg);
+}
+
+.petal3{
+    bottom:4px;
+    left:25px;
+    transform:rotate(180deg);
+}
+
+.petal4{
+    top:25px;
+    left:4px;
+    transform:rotate(270deg);
+}
+
+
+/* Rakhi center */
+
+.intro-rakhi-center{
+
+    width:31px;
+    height:31px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #fff7b5,
+            #ffce37 38%,
+            #bd7213 72%,
+            #713a08
+        );
+
+    border:2px solid #fff0a1;
+
+    box-shadow:
+        0 0 10px rgba(255,225,100,.9);
+
+    position:relative;
+
+    z-index:5;
+}
+
+
+/* Tiny center stone */
+
+.intro-rakhi-center::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#8d1525;
+
+    border:1px solid #ffe58a;
+
+    box-shadow:
+        0 0 7px rgba(255,100,80,.7);
+}
+
+
+/* Decorative top/bottom hanging threads */
+
+.intro-hanging-thread{
+
+    position:absolute;
+
+    width:5px;
+    height:35px;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            #e6b531 0 5px,
+            #a41c29 5px 10px
+        );
+
+    border-radius:5px;
+}
+
+.hanging-top{
+    top:2px;
+}
+
+.hanging-bottom{
+    bottom:2px;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message-box{
+
+    width:min(90%,650px);
+
+    padding:32px;
+
+    border:1px solid rgba(220,160,110,.5);
+
+    background:rgba(20,0,3,.45);
+
+    box-shadow:0 0 40px rgba(0,0,0,.4);
+}
+
+.message-box h2{
+    color:#f3ddba;
+    font-size:26px;
+    margin-bottom:5px;
+}
+
+.message-box p{
+    color:#eadbc9;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.funny{
+    color:#e8b988;
+    font-style:italic;
+}
+
+
+/* =========================
+   RAKHI INTERACTION
+========================= */
+
+.pull-wrap{
+    position:relative;
+    width:170px;
+    height:130px;
+    margin-top:6px;
+}
+
+.pull-string{
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:4px;
+    height:100px;
+
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        #eee 0 4px,
+        transparent 4px 8px
+    );
+
+    cursor:pointer;
+
+    transition:.6s;
+}
+
+.pull-label{
+
+    position:absolute;
+    top:110px;
+    width:100%;
+
+    color:#d7b992;
+
+    font-size:11px;
+    letter-spacing:3px;
+}
+
+
+/* =========================
+   GALLERY (bento + tilt + reveal)
+========================= */
+
+.gallery-title{
+    font-size:31px;
+    color:#f3dfbe;
+    margin-bottom:5px;
+}
+
+.gallery-subtitle{
+    color:#bd9677;
+    font-style:italic;
+    margin-bottom:22px;
+}
+
+.gallery{
+
+    width:min(92%,740px);
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:160px;
+    gap:14px;
+
+    perspective:900px;
+}
+
+.gallery-item{
+
+    border:1px solid rgba(230,180,130,.45);
+    border-radius:6px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    position:relative;
+
+    background:#160304;
+
+    transform-style:preserve-3d;
+    will-change:transform;
+
+    opacity:0;
+    transform:translateY(28px) scale(.94);
+    transition:
+        opacity .55s ease,
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.gallery-item.in-view{
+    opacity:1;
+    transform:translateY(0) scale(1);
+}
+
+.gallery-item:hover{
+    border-color:#f0cf8a;
+    box-shadow:
+        0 14px 30px rgba(0,0,0,.55),
+        0 0 25px rgba(255,150,70,.2);
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:transform .6s ease, filter .6s ease;
+    filter:saturate(.85) brightness(.88);
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+    filter:saturate(1.05) brightness(1);
+}
+
+.zoom-icon{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(.5);
+
+    width:34px;
+    height:34px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(15,3,3,.55);
+    border:1px solid rgba(240,207,138,.7);
+
+    color:#f2d5a6;
+    font-size:14px;
+
+    opacity:0;
+
+    transition:opacity .3s ease, transform .3s ease;
+
+    pointer-events:none;
+}
+
+.gallery-item:hover .zoom-icon{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.caption{
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+    right:0;
+
+    padding:10px 8px 8px;
+
+    font-size:11px;
+
+    color:#f2d5b0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,0)
+    );
+
+    transform:translateY(100%);
+
+    transition:transform .35s ease;
+}
+
+.gallery-item:hover .caption{
+    transform:translateY(0);
+}
+
+
+/* =========================
+   PHOTO VIEWER / LIGHTBOX
+========================= */
+
+.photo-viewer{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.93);
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    z-index:1000;
+}
+
+.photo-viewer.active{
+    display:flex;
+}
+
+.viewer-stage{
+
+    position:relative;
+
+    max-width:90%;
+    max-height:85%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.photo-viewer img{
+
+    max-width:100%;
+    max-height:85vh;
+
+    object-fit:contain;
+
+    border:1px solid #b98762;
+
+    opacity:0;
+    transform:scale(.96);
+
+    animation:viewerIn .35s ease forwards;
+}
+
+@keyframes viewerIn{
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.viewer-caption{
+
+    position:absolute;
+
+    bottom:-38px;
+    left:0;
+    right:0;
+
+    text-align:center;
+
+    color:#e8c9a2;
+
+    font-style:italic;
+
+    font-size:14px;
+}
+
+.viewer-counter{
+
+    position:absolute;
+
+    top:-34px;
+    left:0;
+    right:0;
+
+    text-align:center;
+
+    color:#a7876c;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+.viewer-nav{
+
+    position:fixed;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:52px;
+    height:52px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(240,207,138,.5);
+
+    background:rgba(20,3,4,.55);
+
+    color:#f2d5a6;
+
+    font-size:22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.viewer-nav:hover{
+    background:rgba(170,60,30,.4);
+    box-shadow:0 0 20px rgba(255,120,60,.3);
+}
+
+.viewer-prev{
+    left:25px;
+}
+
+.viewer-next{
+    right:25px;
+}
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+    right:30px;
+
+    font-size:38px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   GIFT
+========================= */
+
+.gift-title{
+    font-size:31px;
+    color:#f1ddbd;
+    margin-bottom:5px;
+}
+
+.gift-subtitle{
+    color:#c59c79;
+    font-style:italic;
+}
+
+.gift-box{
+
+    position:relative;
+
+    width:190px;
+    height:160px;
+
+    margin-top:35px;
+
+    cursor:pointer;
+}
+
+.box-body{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:190px;
+    height:115px;
+
+    background:
+    linear-gradient(135deg,#75152a,#350711);
+
+    border-radius:4px;
+
+    box-shadow:0 20px 35px rgba(0,0,0,.5);
+}
+
+.box-body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:30px;
+    height:100%;
+
+    background:#e5b52f;
+
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+.box-body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+    height:25px;
+
+    background:#e5b52f;
+
+    top:45%;
+
+    transform:translateY(-50%);
+}
+
+.gift-lid{
+
+    position:absolute;
+
+    top:20px;
+    left:-8px;
+
+    width:206px;
+    height:40px;
+
+    background:#86182d;
+
+    border-radius:5px;
+
+    z-index:5;
+
+    transform-origin:left center;
+
+    transition:1s;
+}
+
+.gift-lid::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:30px;
+    height:100%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#e5b52f;
+}
+
+.bow{
+
+    position:absolute;
+
+    top:-12px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:10;
+}
+
+.bow-left,
+.bow-right{
+
+    display:inline-block;
+
+    width:35px;
+    height:25px;
+
+    background:#e5b52f;
+}
+
+.bow-left{
+    border-radius:50% 50% 0 50%;
+}
+
+.bow-right{
+    border-radius:50% 50% 50% 0;
+}
+
+.gift-box.open .gift-lid{
+
+    transform:
+    rotate(-18deg)
+    translate(-25px,-70px);
+}
+
+
+/* =========================
+   BROTHER REVEAL
+========================= */
+
+.brother-reveal{
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    animation:reveal .9s ease;
+}
+
+.brother-reveal.active{
+    display:flex;
+}
+
+@keyframes reveal{
+
+    from{
+        opacity:0;
+        transform:scale(.6);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.brother-photo{
+
+    width:210px;
+    height:210px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:2px solid #d8ae75;
+
+    box-shadow:
+    0 0 45px rgba(255,130,60,.35);
+
+    margin-bottom:18px;
+}
+
+.brother-photo img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.brother-title{
+
+    font-size:36px;
+
+    color:#f5dfbc;
+
+    margin-bottom:7px;
+}
+
+.brother-text{
+
+    color:#c9a27f;
+
+    font-style:italic;
+
+    max-width:500px;
+
+    line-height:1.7;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final-title{
+
+    font-size:clamp(40px,7vw,65px);
+
+    color:#f5dfbd;
+
+    margin-bottom:15px;
+}
+
+.hearts{
+
+    font-size:50px;
+
+    animation:heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .card{
+        width:94vw;
+        height:88vh;
+        padding:20px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:130px;
+    }
+
+    .message-box{
+        padding:22px;
+    }
+
+    .message-box p{
+        font-size:14px;
+    }
+
+    .brother-photo{
+        width:175px;
+        height:175px;
+    }
+
+    .intro-rakhi-circle{
+        width:150px;
+        height:150px;
+    }
+
+    .viewer-nav{
+        width:42px;
+        height:42px;
+        font-size:18px;
+    }
+
+    .viewer-prev{
+        left:10px;
+    }
+
+    .viewer-next{
+        right:10px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+<div class="particles" id="particles"></div>
+
+<div class="card">
+
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+
+
+<!-- =========================
+     1. INTRO
+========================= -->
+
+<section class="screen active" id="screen1">
+
+<h1>Happy Raksha Bandhan ❤️</h1>
+
+<div class="subtitle">
+To my favourite headache... I mean sister 😭
+</div>
+
+
+<!-- RAKHI CIRCLE -->
+
+<div class="intro-rakhi-circle">
+
+    <div class="intro-rakhi-thread"></div>
+
+    <div class="intro-bead bead1"></div>
+    <div class="intro-bead bead2"></div>
+    <div class="intro-bead bead3"></div>
+    <div class="intro-bead bead4"></div>
+    <div class="intro-bead bead5"></div>
+    <div class="intro-bead bead6"></div>
+
+    <div class="intro-hanging-thread hanging-top"></div>
+    <div class="intro-hanging-thread hanging-bottom"></div>
+
+
+    <div class="intro-rakhi">
+
+        <div class="intro-petal petal1"></div>
+        <div class="intro-petal petal2"></div>
+        <div class="intro-petal petal3"></div>
+        <div class="intro-petal petal4"></div>
+
+        <div class="intro-rakhi-center"></div>
+
+    </div>
+
+</div>
+
+
+<div style="color:#d1ad89;">
+
+Yes, I actually made a website for you.
+
+<br>
+
+<strong>Appreciate the effort. 😌</strong>
+
+</div>
+
+<button onclick="nextScreen(2)">
+LET'S GO →
+</button>
+
+</section>
+
+
+<!-- =========================
+     2. MESSAGE
+========================= -->
+
+<section class="screen" id="screen2">
+
+<div class="message-box">
+
+<h2>Dear Didi Pandey,</h2>
+
+<div class="subtitle">
+Unfortunately, you're stuck with me forever. 😂
+</div>
+
+<p>
+
+
+<br>
+
+
+I love to annoy you for absolutely no reason and
+
+<br>
+
+Will continue to use your stuff and will not place them back in the right place.
+
+
+<br>
+
+Will visit you soon for ghar ka khana and will not help you in the kitchen.
+<br><br>
+
+But somehow...
+
+you're still one of my
+<strong class="highlight">favourite people.</strong>
+
+<br><br>
+
+And honestly...
+
+<span class="funny">
+
+I wouldn't trade you for another sister.
+
+<br>
+
+(Okay maybe for a day. 😂)
+
+</span>
+
+</p>
+
+</div>
+
+<button onclick="nextScreen(3)">
+NEXT ❤️
+</button>
+
+</section>
+
+
+<!-- =========================
+     3. RAKHI
+========================= -->
+
+<section class="screen" id="screen3">
+
+<h1 style="font-size:34px;">
+The Official Rakhi Moment 🪢
+</h1>
+
+<div class="subtitle">
+
+Pull it...
+
+<br>
+
+<strong class="highlight">
+I promise it won't explode. 😂
+</strong>
+
+</div>
+
+<div class="intro-rakhi-circle" id="mainRakhiCircle">
+
+    <div class="intro-rakhi-thread"></div>
+
+    <div class="intro-bead bead1"></div>
+    <div class="intro-bead bead2"></div>
+    <div class="intro-bead bead3"></div>
+    <div class="intro-bead bead4"></div>
+    <div class="intro-bead bead5"></div>
+    <div class="intro-bead bead6"></div>
+
+    <div class="intro-hanging-thread hanging-top"></div>
+    <div class="intro-hanging-thread hanging-bottom"></div>
+
+
+    <div class="intro-rakhi">
+
+        <div class="intro-petal petal1"></div>
+        <div class="intro-petal petal2"></div>
+        <div class="intro-petal petal3"></div>
+        <div class="intro-petal petal4"></div>
+
+        <div class="intro-rakhi-center"></div>
+
+    </div>
+
+</div>
+
+<div class="pull-wrap">
+
+<div
+class="pull-string"
+id="pullString"
+onclick="pullRakhi()">
+</div>
+
+<div class="pull-label">
+PULL THE STRING
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     4. GALLERY
+========================= -->
+
+<section class="screen" id="screen4">
+
+<div class="gallery-title">
+Our Chaos Gallery 📸❤️
+</div>
+
+<div class="gallery-subtitle">
+Proof that we actually had some good moments. Tap any photo to zoom in.
+</div>
+
+
+<div class="gallery" id="galleryGrid">
+<!-- items injected by JS from the photos array -->
+</div>
+
+
+<button onclick="nextScreen(5)">
+WAIT... THERE'S MORE 👀
+</button>
+
+</section>
+
+
+<!-- =========================
+     5. GIFT
+========================= -->
+
+<section class="screen" id="screen5">
+
+<div id="giftIntro">
+
+<div class="gift-title">
+Okay... One Last Surprise 👀
+</div>
+
+<div class="gift-subtitle">
+
+You probably expected money.
+
+<br>
+
+<strong class="highlight">
+Nice try. 😂
+</strong>
+
+</div>
+
+
+<div
+class="gift-box"
+id="giftBox"
+onclick="openGift()">
+
+<div class="gift-lid"></div>
+
+<div class="bow">
+
+<span class="bow-left"></span>
+<span class="bow-right"></span>
+
+</div>
+
+<div class="box-body"></div>
+
+</div>
+
+
+<div style="
+margin-top:25px;
+color:#c6a17d;
+font-size:12px;
+letter-spacing:2px;
+">
+
+OPEN YOUR GIFT 🎁
+
+</div>
+
+</div>
+
+
+<!-- BROTHER REVEAL -->
+
+<div
+class="brother-reveal"
+id="brotherReveal">
+
+<div class="brother-photo">
+
+<img src="images/brother.jpg">
+
+</div>
+
+<div class="brother-title">
+
+Surprise! It's Me 😂❤️
+
+</div>
+
+<div class="brother-text">
+
+Your actual gift is...
+
+<br>
+
+<strong class="highlight">
+ME. Your Brother.
+</strong>
+
+<br><br>
+
+Limited edition.
+
+<br>
+
+No returns. No exchanges. No refunds. 💀
+
+<br><br>
+
+But lifetime support included. 🫶
+
+</div>
+
+<button onclick="nextScreen(6)">
+ONE LAST THING ❤️
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     6. FINAL
+========================= -->
+
+<section class="screen" id="screen6">
+
+<div class="final-title">
+Love You, Didiiiii ❤️
+</div>
+
+<div class="hearts">
+🎀 ❤️ 🎀
+</div>
+
+<div style="
+margin-top:25px;
+color:#caa27e;
+line-height:1.9;
+max-width:520px;
+">
+
+We may fight.
+
+<br>
+
+you may navigate me wrong in traffic.
+
+<br>
+
+You may say
+<strong>"I hate you"</strong>
+approximately 400 times a year. 😂
+
+<br><br>
+
+But at the end of the day...
+
+<strong class="highlight">
+I'll always have your back.
+</strong>
+
+<br><br>
+
+You're not just my sister.
+
+<br>
+
+You're my built-in best friend. 🫶
+
+<br><br>
+
+<strong>
+Happy Raksha Bandhan ❤️ <br>
+will visit you soon and wash your dishes. 😌
+</strong>
+
+</div>
+
+</section>
+
+
+</div>
+</div>
+
+
+<!-- PHOTO VIEWER / LIGHTBOX -->
+
+<div
+class="photo-viewer"
+id="photoViewer">
+
+<div
+class="close"
+onclick="closePhoto()">
+×
+</div>
+
+<div class="viewer-nav viewer-prev" onclick="stepPhoto(-1)">‹</div>
+<div class="viewer-nav viewer-next" onclick="stepPhoto(1)">›</div>
+
+<div class="viewer-stage">
+
+<div class="viewer-counter" id="viewerCounter"></div>
+
+<img id="viewerImage">
+
+<div class="viewer-caption" id="viewerCaption"></div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =========================
+   FLOATING EMOJIS
+========================= */
+
+const particles =
+document.getElementById("particles");
+
+const emojis=[
+    "❤️",
+    "✨",
+    "🌸",
+    "🎀",
+    "💕",
+    "⭐"
+];
+
+for(let i=0;i<45;i++){
+
+    const p=document.createElement("span");
+
+    p.className="particle";
+
+    p.innerText=
+    emojis[
+        Math.floor(Math.random()*emojis.length)
+    ];
+
+    p.style.left=
+    Math.random()*100+"%";
+
+    p.style.top=
+    Math.random()*100+"%";
+
+    p.style.animationDelay=
+    Math.random()*6+"s";
+
+    p.style.animationDuration=
+    (4+Math.random()*5)+"s";
+
+    particles.appendChild(p);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+function nextScreen(number){
+
+    document
+    .querySelectorAll(".screen")
+    .forEach(screen=>{
+        screen.classList.remove("active");
+    });
+
+    document
+    .getElementById("screen"+number)
+    .classList.add("active");
+
+    if(number===4){
+        revealGallery();
+    }
+
+}
+
+
+/* =========================
+   RAKHI INTERACTION
+========================= */
+
+let rakhiPulled=false;
+
+function pullRakhi(){
+
+    if(rakhiPulled)return;
+
+    rakhiPulled=true;
+
+    const string=
+    document.getElementById("pullString");
+
+    string.style.height="140px";
+
+    createConfetti();
+
+    setTimeout(()=>{
+
+        nextScreen(4);
+
+    },900);
+
+}
+
+
+/* =========================
+   GALLERY (modern bento grid)
+========================= */
+
+const photos=[
+    { src:"images/photo1.jpg", caption:"Partners in crime 😎" },
+    { src:"images/photo2.jpg", caption:"Who is more annoying? 🤔" },
+    { src:"images/photo3.jpg", caption:"Definitely not me. 😌" },
+    { src:"images/photo4.jpg", caption:"Core memory ❤️" },
+    { src:"images/photo5.jpg", caption:"Chaos level: 100 😂" },
+    { src:"images/photo6.jpg", caption:"Still my favourite human 🫶" }
+];
+
+const galleryGrid=
+document.getElementById("galleryGrid");
+
+photos.forEach((photo,index)=>{
+
+    const item=document.createElement("div");
+
+    item.className="gallery-item";
+    item.setAttribute("data-index",index);
+    item.onclick=()=>openPhoto(index);
+
+    item.innerHTML=`
+        <img src="${photo.src}" loading="lazy">
+        <div class="zoom-icon">🔍</div>
+        <div class="caption">${photo.caption}</div>
+    `;
+
+    /* subtle 3D tilt following the cursor */
+    item.addEventListener("mousemove",(e)=>{
+
+        const rect=item.getBoundingClientRect();
+
+        const x=(e.clientX-rect.left)/rect.width-.5;
+        const y=(e.clientY-rect.top)/rect.height-.5;
+
+        item.style.transform=
+        `translateY(0) scale(1.03)
+         rotateX(${(-y*8).toFixed(2)}deg)
+         rotateY(${(x*8).toFixed(2)}deg)`;
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+        item.style.transform="translateY(0) scale(1)";
+    });
+
+    galleryGrid.appendChild(item);
+
+});
+
+let galleryRevealed=false;
+
+function revealGallery(){
+
+    if(galleryRevealed)return;
+
+    galleryRevealed=true;
+
+    document
+    .querySelectorAll(".gallery-item")
+    .forEach((item,index)=>{
+
+        setTimeout(()=>{
+            item.classList.add("in-view");
+        },index*90);
+
+    });
+
+}
+
+
+/* =========================
+   PHOTO LIGHTBOX
+========================= */
+
+let currentPhoto=0;
+
+function openPhoto(index){
+
+    currentPhoto=index;
+
+    const viewer=
+    document.getElementById("photoViewer");
+
+    renderPhoto();
+
+    viewer.classList.add("active");
+
+}
+
+function renderPhoto(){
+
+    const photo=photos[currentPhoto];
+
+    const img=
+    document.getElementById("viewerImage");
+
+    img.style.animation="none";
+    void img.offsetWidth;
+    img.style.animation="viewerIn .35s ease forwards";
+
+    img.src=photo.src;
+
+    document
+    .getElementById("viewerCaption")
+    .innerText=photo.caption;
+
+    document
+    .getElementById("viewerCounter")
+    .innerText=
+    (currentPhoto+1)+" / "+photos.length;
+
+}
+
+function stepPhoto(direction){
+
+    currentPhoto=
+    (currentPhoto+direction+photos.length)%photos.length;
+
+    renderPhoto();
+
+}
+
+function closePhoto(){
+
+    document
+    .getElementById("photoViewer")
+    .classList.remove("active");
+
+}
+
+document
+.getElementById("photoViewer")
+.addEventListener("click",(e)=>{
+
+    if(e.target.id==="photoViewer"){
+        closePhoto();
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    const viewer=
+    document.getElementById("photoViewer");
+
+    if(!viewer.classList.contains("active"))return;
+
+    if(e.key==="Escape")closePhoto();
+    if(e.key==="ArrowRight")stepPhoto(1);
+    if(e.key==="ArrowLeft")stepPhoto(-1);
+
+});
+
+/* swipe support for mobile */
+let touchStartX=0;
+
+document
+.getElementById("photoViewer")
+.addEventListener("touchstart",(e)=>{
+    touchStartX=e.changedTouches[0].screenX;
+});
+
+document
+.getElementById("photoViewer")
+.addEventListener("touchend",(e)=>{
+
+    const touchEndX=e.changedTouches[0].screenX;
+
+    const delta=touchEndX-touchStartX;
+
+    if(Math.abs(delta)>40){
+        stepPhoto(delta<0?1:-1);
+    }
+
+});
+
+
+/* =========================
+   GIFT
+========================= */
+
+let giftOpened=false;
+
+function openGift(){
+
+    if(giftOpened)return;
+
+    giftOpened=true;
+
+    const gift=
+    document.getElementById("giftBox");
+
+    gift.classList.add("open");
+
+    createConfetti();
+
+    setTimeout(()=>{
+
+        document
+        .getElementById("giftIntro")
+        .style.display="none";
+
+        document
+        .getElementById("brotherReveal")
+        .classList.add("active");
+
+    },1200);
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti(){
+
+    const symbols=[
+        "❤️",
+        "✨",
+        "🎀",
+        "🌸",
+        "💛",
+        "😂"
+    ];
+
+    for(let i=0;i<55;i++){
+
+        const c=
+        document.createElement("div");
+
+        c.innerText=
+        symbols[
+            Math.floor(
+                Math.random()*symbols.length
+            )
+        ];
+
+        c.style.position="fixed";
+
+        c.style.left=
+        Math.random()*100+"vw";
+
+        c.style.top="-30px";
+
+        c.style.fontSize=
+        (15+Math.random()*20)+"px";
+
+        c.style.zIndex="2000";
+
+        document.body.appendChild(c);
+
+        const duration=
+        2+Math.random()*3;
+
+        c.animate(
+
+            [
+                {
+                    transform:
+                    "translateY(0) rotate(0deg)",
+                    opacity:1
+                },
+
+                {
+                    transform:
+                    `translateY(110vh)
+                     rotate(${Math.random()*720}deg)`,
+
+                    opacity:0
+                }
+            ],
+
+            {
+                duration:
+                duration*1000,
+
+                easing:"ease-out"
+            }
+
+        );
+
+        setTimeout(()=>{
+            c.remove();
+        },duration*1000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
